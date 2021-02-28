@@ -1,0 +1,197 @@
+body{
+	font-family: Helvetica Neue, "Segoe UI", verdana;
+	margin:0;
+	background-color: #C28340;
+	color:#FFF;
+}
+*{
+	box-sizing: border-box;
+}
+header{
+	overflow: hidden;
+	background-color: #212121;
+	background-image: url("../Header.png");
+	padding: 10px; width: 100%;
+	position: fixed; top: 0px; z-index: 2;
+	box-shadow: 0px 5px rgba(0,0,0,0.3);
+}
+header img{
+ 	width: 260px;
+ 	position: relative;
+ 	left: 75px; top: 10px;
+}
+nav{
+	float: right;
+}
+nav a{
+	float: left; color: white;
+	text-align: center; margin: 0px 30px;
+	padding: 20px; text-transform: uppercase;
+	text-decoration: none;
+	font-size: 15px;
+	line-height: 25px;
+}
+nav a:hover{
+	background-color: rgba(0,0,0,0.1);
+	color: #8FCA5C;
+}
+#First{
+	background-image: url("../S1.jpg");
+	background-repeat: no-repeat; display: block;
+	background-size:cover; height:50vw;
+	position: relative; top:50px; left:0px;
+	z-index:0; 
+}
+#First h1{
+	text-transform: uppercase;
+	text-align: left;
+	padding: 110px 0px 0px 70px;
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 40px;
+	letter-spacing: 1px;
+	margin:0px;
+}
+#First p{
+	display: block;
+	width: 50vw;
+	padding: 10px 70px;
+	font-size: 18px;
+	line-height: 26px;
+	margin:0px;
+}
+#First a{
+	text-transform: uppercase;
+	text-align: left;
+	margin:30px 70px; display: inline-block;
+	padding: 20px 50px;
+	position: relative;
+	border: 5px solid #288123;
+	font-size: 20px; font-weight: 500;
+	text-decoration: none; color: #FFF;
+	background-color: #34aa2f;
+	box-shadow: 2px 2px rgba(0,0,0,0.2);
+}
+#First a:hover{
+	background-color: rgba(0,0,0,0.5);
+	border: 5px solid #000;
+	box-shadow: 3px 3px rgba(0,0,0,0.4);
+}
+@media screen and (max-width: 980px)
+{
+	header a{
+		float: none;
+		display: block;
+		text-align: left;
+	}
+	nav{
+		display: none;
+	}
+	#First p{
+		font-size: 16px;
+		width: 75%;
+	}
+}
+@media screen and (max-width: 790px)
+{
+
+	#First a{
+		display: none;
+	}
+}
+@media screen and (max-width: 540px)
+{
+	#First h1{
+		margin:auto;
+		padding: auto;
+	}
+	#First p{
+		display: none;
+	}
+}
+#Second{
+	background-image: url("../S2.png");
+	background-repeat: no-repeat; display: block;
+	background-size:cover; padding-bottom: 15px; 
+	z-index:0; margin:auto; text-align: center;
+}
+.Post{
+	margin:80px 100px;
+	background-color: #FFF; display: block; background-color: #f8f5f4;
+	color: #000; padding: 20px; text-align: center;
+}
+.Post h2{
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 28px; display: flex;
+	line-height: 34px;
+	padding: 50px 30% 30px 30%; margin: auto;
+}
+#sub{
+	display: block; width:100%;
+	margin: auto; padding-bottom: 20px;
+}
+.game{
+	display: inline-flex; flex-direction: column;
+	object-position: left; margin: 25px;
+	width: 23%; text-align: center;
+}
+.game img:hover{
+	transform: scale(1.02); border: 2px solid #84c94c;
+	transition: transform 0.3s ease-in-out;
+}
+.game a{
+	margin-top:10px; text-transform: uppercase;
+	text-decoration: none; color: #196d17;
+	font-weight: 700; position: relative;
+	display:block;
+}
+.game a:hover{
+	color: #000; text-decoration: underline;
+}
+.game p{
+	margin: 0px; color: #181818; font-size: 16px;
+	margin-top:5px;
+}
+#trans{
+	background-image: url("../trans12.png");
+	background-repeat: no-repeat; display: block;
+	background-size:cover; width: 100%; height: 5vw;
+	z-index:0; float: left;
+}
+#Feedback{
+	background-image: url("../S3.png");
+	background-repeat: no-repeat; display: block;
+	background-size:cover; padding-bottom: 15px; 
+	z-index:0; margin:auto; text-align: center;
+}
+
+input[type=text], select, textarea {
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	margin-top: 6px;
+	margin-bottom: 16px;
+	resize: vertical
+}
+
+input[type=submit] {
+	background-color: #4CAF50;
+	color: white;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+input[type=submit]:hover {
+	background-color: #45a049;
+}
+
+.container {
+	border-radius: 5px;
+	background-color: #f2f2f2;
+	padding: 20px;
+}
